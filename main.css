@@ -78,10 +78,6 @@ img{
     transition: all 0.5s;
 }
 
-.display-none{
-    display: none;
-}
-
 ::-webkit-scrollbar{
     width: 20px;
 }
@@ -290,46 +286,27 @@ img{
    Flip Card
    ========================================================================== */
 
-.flip-card{
-    background-color: transparent;
-    width: 600px;
-    height: 400px;
-    perspective: 2000px;
-}
-
-.flip-card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner{
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 8px;
-}
-
-.flip-card-front{
-    background-color: white;
-}
-
-.flip-card-back{
-    background-color: var(--color-base);
-    color: var(--color-body);
-    transform: rotateY(180deg);
-}
-
 #trent-university-logo{
     max-width: 8rem;
+}
+
+.education_box {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    background: url('images/trent-university.png');
+    background-size: contain;
+  }
+
+.education_hid-box {
+    top: 100%;
+    position: relative;
+    background: var(--color-base);
+    height: 100%;
+}
+
+.education_box:hover > .education_hid-box{
+    top: 0;
 }
 
 /* ==========================================================================
