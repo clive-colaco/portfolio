@@ -1,6 +1,6 @@
 # My Portfolio Website!
 
-https://jcquacode.github.io/portfolio/
+https://jcquacode.github.io/Portfolio/
 
 Here you can find out all about me and have a better look at what I do.
 
