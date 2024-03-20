@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Silkscreen:wght@400;700&display=swap');
+
+/* ==========================================================================
+   Default Page Styles/Properties
+   ========================================================================== */
+
+:root{
+    /* --color-body: #b6cbce;
+    --color-placeholder: #829093;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58; */
+
+    --color-body: #b6cdce;
+    --color-placeholder: #829093;
+    --color-heading: #dbf3f1;
+    --color-base: #5c0462;
+    --color-base2: #3e0654;
+    --color-brand: #35c2a1;
+    --color-brand2: #47d8b6;
+
+    --sidbar-width: 240px;
+}
+
+body{
+    background: linear-gradient(var(--color-base), var(--color-base2) 45%);
+    background-attachment: fixed;
+    color: var(--color-body);
+    font-family: "DM Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+.text-brand{
+    color: var(--color-brand);
+}
+
+.bg-base{
+    background-color: var(--color-base);
+}
+
+.full-height{
+    min-height: 100vh;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect:hover{
+    box-shadow: -3px 3px 0 0 var(--color-brand);
+    transition: all 0.5s;
+}
+
+.transition{
+    transition: all 0.5s;
+}
+
+.display-none{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track{
+    background: linear-gradient(var(--color-base), var(--color-base2) 45%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-body);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-brand);
+}
+
+/* ==========================================================================
+   Navigation Bar & Content Wrapper
+   ========================================================================== */
+
+/* Navigation Bar by Default */
+
+.navbar{
+    background-color: var(--color-base);
+}
+
+.navbar .nav-link{
+    color: white;
+}
+
+.navbar .nav-link.active{
+    color: var(--color-brand);
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand);
+}
+
+/* Navigation Bar & Content Wrapper on Large Screens */
+
+@media (min-width: 992px){
+
+    /* Navigation Bar */
+
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(#35c2a1bb, #3e0654dd 70%), url(/images/sidebar-image.png);
+        background-size: cover;
+    }
+
+    .navbar-brand .profile-picture,
+    .navbar-brand .profile-picture img{
+        width: 12rem;
+    }
+
+    .navbar-brand .profile-picture{
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    .navbar-brand .profile-picture:hover{
+        overflow: hidden;
+        box-shadow: -3px 3px 0 0 var(--color-brand);
+    }
+
+    .navbar-brand .profile-picture img{
+        transition: all 0.5s ease;
+    }
+
+    .navbar-brand .profile-picture img:hover{
+        transform: scale(1.1);
+    }
+
+    /* Content Wrapper */
+
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2)
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand2);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+/* ==========================================================================
+   Project Cards
+   ========================================================================== */
+
+.card-custom .card-custom-image img{
+    transition: all 0.5s ease;
+}
+
+.card-custom:hover .card-custom-image img{
+    transform: scale(1.1);
+}
+
+.card-custom p::-webkit-scrollbar{
+    width: 20px;
+}
+  
+.card-custom p::-webkit-scrollbar-track{
+    background: var(--color-base);
+}
+
+.card-custom p::-webkit-scrollbar-thumb{
+    background-color: var(--color-body);
+    border-radius: 20px;
+    border: 8px solid transparent;
+    background-clip: content-box;
+}
+
+.card-custom p::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-brand);
+}
+
+@media (min-width: 576px){
+    .card-custom .card-custom-image{
+        overflow: hidden;
+    }
+
+    .flat-images{
+        min-width: 30rem;
+    }
+}
+
+@media (min-width: 768px){
+    .card-custom .card-custom-image{
+        overflow: hidden;
+    }
+
+    .card-custom-image{
+        max-height: 14rem;
+    }
+
+    .flat-images{
+        min-width: 30rem;
+    }
+
+    .custom-card-content p{
+        max-height: 4rem;
+        overflow-y: scroll;
+    }
+}
+
+@media (min-width: 992px){
+    .card-custom .card-custom-image{
+        overflow: hidden;
+    }
+    
+    .card-custom-image{
+        max-height: 14rem;
+    }
+
+    .card-custom{
+        max-width: 37rem;
+    }
+
+    .custom-card-content p{
+        height: 5rem;
+        overflow-y: auto;
+    }
+}
+
+/* ==========================================================================
+   Flip Card
+   ========================================================================== */
+
+.flip-card{
+    background-color: transparent;
+    width: 600px;
+    height: 400px;
+    perspective: 2000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+}
+
+.flip-card-front{
+    background-color: white;
+}
+
+.flip-card-back{
+    background-color: var(--color-base);
+    color: var(--color-body);
+    transform: rotateY(180deg);
+}
+
+#trent-university-logo{
+    max-width: 8rem;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+#contact .form-control{
+    background-color: var(--color-base);
+    border-color: var(--color-base);
+    color: var(--color-body);
+}
+
+#contact .form-control::placeholder{
+    color: var(--color-placeholder);
+}
+
+#contact .form-control:focus{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact input.form-control{
+    height: 44px;
+}
