@@ -9,5 +9,3 @@ This site was developed using:
 - CSS
 - HTML
 - JavaScript
-
-(P.S: yes I like purple)
