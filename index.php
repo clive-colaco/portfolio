@@ -57,9 +57,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#education">Education</a>
 					</li>
-					<!-- <li class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
-					</li> -->
+					</li>
 				</ul>
 			</div>
 
@@ -95,7 +95,7 @@
 							code to bring your products into reality.</p>
 						<div data-aos="fade-up" data-aos-delay="800">
 							<a href="#projects" class="btn btn-brand me-3">Check out my projects!</a>
-							<a href="#home" id="email-clipboard" class="link-custom d-block d-md-inline d-lg-block d-xl-block d-xxl-inline mt-4 mt-md-0 mt-lg-4 mt-xl-4 mt-xxl-0"> 
+							<a id="email-clipboard" class="link-custom d-block d-md-inline d-lg-block d-xl-block d-xxl-inline mt-4 mt-md-0 mt-lg-4 mt-xl-4 mt-xxl-0"> 
 								<i id="email-envelope" class="las la-envelope la-lg"></i> 
 								<i id="email-check" class="las la-clipboard-check la-lg d-none"></i>
 								<span>clivejyonilcolaco@trentu.ca</span>
@@ -172,7 +172,7 @@
 								<h6 class="pb-2">Predatory Simulation</h6>
 								<p>I simulated the predatory behaviour of snakes that devour the birds roaming around
 									the screen. This was made in Visual Studio using C#.</p>
-								<a href="https://github.com/JCQuacode/Predatory_Simulation" class="link-custom">Read
+								<a href="https://github.com/clive-colaco/predatory-simulation" class="link-custom">Read
 									More</a>
 							</div>
 						</div>
@@ -188,7 +188,7 @@
 								<h6 class="pb-2">Banking Insights</h6>
 								<p>My take on a banking insights website with a couple of extra features I thought would
 									go well with it. This was created in Figma.</p>
-								<a href="https://github.com/JCQuacode/Website_Designs" class="link-custom">Read More</a>
+								<a href="https://github.com/clive-colaco/website-designs" class="link-custom">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -202,7 +202,7 @@
 								<h6 class="pb-2">Photoshopped Ducks</h6>
 								<p>Yes! I can do a good bit of graphic designing too. Here are some duck edits in Adobe
 									Photoshop. Because why not?</p>
-								<a href="https://github.com/JCQuacode/Photoshop" class="link-custom">Read More</a>
+								<a href="https://github.com/clive-colaco/photoshop" class="link-custom">Read More</a>
 							</div>
 						</div>
 					</div>
@@ -253,24 +253,24 @@
 		</section>
 
 		<!-- Contact -->
-		<!-- <section id="contact" class="full-height px-lg-5">
+		<section id="contact" class="full-height px-lg-5">
 			<div class="container">
-				<div class="row justify-content-start text-start pb-4">
+				<div class="row justify-content-start text-start">
 					<div class="col-lg-8 pb-4" data-aos="fade-up">
 						<h6 class="text-brand">Contact</h6>
-						<h1>Get in touch with me</h1>
+						<h1>Get in Touch with Me</h1>
 					</div>
 					
 					<div class="col-lg-8">
-						<form action="" class="row g-lg-3 gy-3" data-aos="fade-up" data-aos-delay="400">
+						<form action="" method="post" class="row g-lg-3 gy-3" data-aos="fade-up" data-aos-delay="400">
 							<div class="form-group col-12">
-								<input type="email" class="form-control" placeholder="Your email">
+								<input type="email" name="email" class="form-control" placeholder="Your email">
 							</div>
 							<div class="form-group col-12">
-								<input type="text" class="form-control" placeholder="Enter subject">
+								<input type="text" name="subject" class="form-control" placeholder="Enter subject">
 							</div>
 							<div class="form-group col-12">
-								<textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Your message"></textarea>
+								<textarea name="message" id="" cols="30" rows="4" class="form-control" placeholder="Your message"></textarea>
 							</div>
 							<div class="form-group col-12">
 								<button type="submit" class="btn btn-brand">Submit</button>
@@ -279,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 	</div>
 
