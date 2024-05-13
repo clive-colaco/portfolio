@@ -253,7 +253,7 @@
 		</section>
 
 		<!-- Contact -->
-		<section id="contact" class="full-height px-lg-5">
+		<!-- <section id="contact" class="full-height px-lg-5">
 			<div class="container">
 				<div class="row justify-content-start text-start">
 					<div class="col-lg-8 pb-4" data-aos="fade-up">
@@ -279,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 	</div>
 
