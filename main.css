@@ -303,8 +303,8 @@ img{
     height: 350px;
     overflow: hidden;
     background: url('images/trent-university.png');
-    background-size: contain;
-  }
+    background-size: cover;
+}
 
 .education_hid-box {
     top: 100%;
