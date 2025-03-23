@@ -132,7 +132,7 @@ img{
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(#35c2a1bb, #24292e 70%), url("images/sidebar-image.png");
+        background: linear-gradient(#35c2a1bb, #24292e85 70%), url("images/sidebar-image.png");
         background-size: cover;
     }
 
